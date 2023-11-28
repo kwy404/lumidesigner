@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
+
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 6rem;
+  min-height: 100vh;
+}
+
+.profileImg{
+  background-image: url(/photos/profile_nobg.png);
+  width: 400px;
+  height: 400px;
+  position: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  left: 50%;
+  transform: translate(-50%);
+  bottom: 30%;
+  filter: grayscale(1) drop-shadow(2px 4px 6px black);
+  border-radius: 38%;
+  z-index: 0;
+  transition: 0.4s ease;
+  cursor: pointer;
+}
+
+.profileImg:hover{
+  transform: translate(-50%) scale(1.1); 
+}
+
+.titleFundo{
+  font-size: 800%;
+  position: fixed;
+  bottom: 6%;
+  z-index: -1;
+  filter: drop-shadow(2px 2px 3px #41124d) contrast(0.5);
+  padding: 5px;
+  color: white;
+  opacity: 0.8;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+@media only screen and (max-width: 890px) {
+  .titleFundo{
+    font-size: 800%;
+  }
+  .profileImg{
+    width: 300px;
+    height: 300px;
+  }
+}
+
+@media only screen and (max-width: 685px) {
+  .titleFundo{
+    font-size: 600%;
+  }
+}
+
+@media only screen and (max-width: 510px) {
+  .titleFundo{
+    font-size: 500%;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  .titleFundo{
+    font-size: 300%;
+  }
+
+  .profileImg{
+    width: 200px;
+    height: 200px;
+  }
+}
+
+.imgBg{
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  background-image: url(/photos/mountain.jpg);
+  top: 0;
+  z-index: -2;
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.2;
+  filter: drop-shadow(2px 4px 6px black) hue-rotate(49deg);
+}
+
+.pe{
+  color: white;
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  text-transform: uppercase;
+  font-family: 'Ubuntu', sans-serif;
+  opacity: 0.6;
+}
